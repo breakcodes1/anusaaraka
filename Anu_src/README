@@ -1,0 +1,41 @@
+
+1. word.c  :  The word.c program gives ids for each word and generates control facts for further use.
+              The files generated are :
+                 new_text.txt                   - contains sentences with tags
+                 dir_names.txt                  - contains directories names
+                 original_word.dat              - contains original words with ids
+		 para_sent_id_info.dat		- contains para_id,sent_id and no. of words
+                 punctuation_info.dat           - contains left and right punctuation information for each word
+                 meaning_to_be_decided.dat      - control fact
+                 to_be_included_in_paxa.dat     - control fact
+		 Eng_id_order.dat               - contains english id order
+                 word2.dat                      - contains capital letter information
+                 word.dat                       - contains word information with ids
+		 morph_root_tobe_choosen.dat    - control fact
+
+              compile : gcc word.c -o word.out
+              run     : ./word.out < <file-name>.fmt_split <file-name>
+
+---------------------------------------------------------------------------------------------------------------------------
+
+2. chunker.c : The chunker.c program takes the chunker output as input(from the standard input) and the name of the text 
+               as an argument and produes the chunk.clp file.
+   
+               compile : gcc  chunker.c -o chunker.out
+               run     : ./chunker.out <file-name>  < chunk.dat
+
+---------------------------------------------------------------------------------------------------------------------------
+
+3. split_file.c : The split_file.c program solits the sentences info with the pattern ;~~~~~~~~~~ and moves to the
+                  particular directory
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+10-12-10
+========
+Removed punct.c program (b'coz punctuation is already generated from word.c program)
+(Note : punct.c file is available in anu_testing-19-11-10.tgz )
+
+
+
