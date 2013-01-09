@@ -1,0 +1,56 @@
+This GIT repository contains only the directories inside Anusaaraka software where there is frequent changes done in programs. 
+
+It doesn't include database files or WSD rules or any standard tools (like parsers, SMT tools)
+
+Below is the list of actual directories inside Anusaaraka.
+
+9.4M	Anu
+1.9M	Anu_clp_files
+53M	Anu_data
+8.0K	Anu_databases
+620K	Anu_outputs
+404K	Anu_src
+19M	apertium
+392K	bin
+12M	Browser
+6.2M	CLIPS
+9.6M	debugging
+116K	Doc
+268K	Log
+273M	miscellaneous
+3.8M	new_hnd_mo
+490M	Parsers
+12K	README
+40K	shell_scripts
+16M	WSD
+
+
+Below is the dir list which is in this GIT repository.
+
+Anu
+Anu_clp_files
+Anu_src
+Browser
+CLIPS
+Doc
+Log
+README
+bin
+debugging
+new_hnd_mo
+shell_scripts
+
+Below is the dir list which is not in this GIT repository.
+
+#	Anu_data/
+#	Anu_databases/
+#	Anu_outputs/
+#	Parsers/
+#	WSD/
+#	apertium/
+#	miscellaneous/
+
+
+
+
+
