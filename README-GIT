@@ -1,4 +1,5 @@
 This GIT repository contains only the directories inside Anusaaraka software where there is frequent changes done in programs. 
+-----------
 
 It doesn't include database files or WSD rules or any standard tools (like parsers, SMT tools)
 
