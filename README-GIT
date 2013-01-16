@@ -3,7 +3,7 @@ This GIT repository contains only the directories inside Anusaaraka software whe
 
 It doesn't include database files or WSD rules or any standard tools (like parsers, SMT tools)
 
-Below is the list of actual directories inside Anusaaraka :
+Below is the list of actual directories inside Anusaaraka:
 
 9.4M	Anu
 1.9M	Anu_clp_files
