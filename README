@@ -68,10 +68,10 @@
       Note :: Please run  remove_out-files.sh before recompiling.
           
 ----------------------------------------------------------------------------------------------------------------
-3. To remove out files  :   shell_scripts/remove_out-files.sh
+ 3. To remove out files  :   shell_scripts/remove_out-files.sh
 
 -----------------------------------------------------------------------------------------------------------------   
-4. How to run Anusaaraka:
+ 4. How to run Anusaaraka:
    =====================
 
 	i. Copy the below text in a file "sample"
@@ -94,7 +94,7 @@
 
   (NOTE : Path for alignment README is miscellaneous/SMT/alignment/README )
 -----------------------------------------------------------------------------------------------------------------
-5. Output :
+ 5. Output :
    ======
 
     The "tmp" directory is created for given input file. The facts for the particular sentences are stored in their 
@@ -131,7 +131,7 @@
                  (Contains Hindi translated sentences)
                
 -------------------------------------------------------------------------------------------------------------------
-6. Linkage diagram:
+ 6. Linkage diagram:
     ===============   
     To view the linkage diagram run the Unix command:
     $ anu_link-parser.sh   
@@ -142,7 +142,7 @@
     $ anu_link-parser.sh  < <input_file>
 
 -------------------------------------------------------------------------------------------------------------------
-7. To run Anusaaraka for different Parsers
+ 7. To run Anusaaraka for different Parsers
     =======================================
         1.  To run Stanford Parser   -- Anusaaraka_stanford.sh <file_name>
 	2.  To run Berkeley Parser   -- Anusaaraka_berkeley.sh <file_name>
@@ -173,12 +173,12 @@
  
   (NOTE : For Debugging basic knowledge of CLIPS is needed)
 ----------------------------------------------------------------------------------------------------------------------
-9. Categories
+ 9. Categories
    ==========
      The categories.txt file contains category information in the following format:
               <Long Form> <POS Tag> <Crude Category>
 ----------------------------------------------------------------------------------------------------------------------
-10.  Punctuations: 
+ 10.  Punctuations: 
      ============= 
      The following words are used for the respective punctuations:
 
@@ -198,7 +198,7 @@
       =  equal_to
      ()  open-closed_parenthesis
 --------------------------------------------------------------------------------------------------------------------
-11.   The sentences with correct translation for all the parsers are available in $HOME_anu_test/Anu_outputs.
+ 11.   The sentences with correct translation for all the parsers are available in $HOME_anu_test/Anu_outputs.
 		for OL parser      -- ol_ver_output
 		for Std parser     -- sd_ver_output
 		for Link parser    -- link_ver_output
