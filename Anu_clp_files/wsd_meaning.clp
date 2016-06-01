@@ -1,16 +1,20 @@
+ ;This file is mainly intended for finding out the wsd(Word Sense Disambiguation) meaning of the word whose meaning are not 
+ ;defined in the proper noun and compound word dictionaries.Inputs to this file is the id of the word we need to retract meaning
+ ;of. Output is the w-x notation of the meaning of the word in hindi. 
+ 
  (defglobal ?*debug_flag* = TRUE)
  
- (defrule dont_load_chunkids
- (declare (salience 7001))
- (root-verbchunk-tam-chunkids ? ? ? $? ?id $? ?root_id)
- (not (meaning_has_been_decided ?id))
+ (defrule dont_load_chunkids					  ;Defining name for a rule
+ (declare (salience 7001))					  ;Declaring the priority level for a rule to be fired
+ (root-verbchunk-tam-chunkids ? ? ? $? ?id $? ?root_id)		 
+ (not (meaning_has_been_decided ?id))                             ;Declaring that this id's meaning is to be decided 
  ?mng<-(meaning_to_be_decided ?id)
  =>
-       (assert (meaning_has_been_decided ?id))
+       (assert (meaning_has_been_decided ?id))			  ;Meaning is asserted in the final output 
        (retract ?mng)
  )
  ;--------------------------------------------------------------------------------------------------------- 
- ;loads user original word file
+ ;loads user original word file  
  (defrule load_user_org_word_file
  (declare (salience 7000))
  (id-original_word ?id ?word)
@@ -107,6 +111,7 @@
        	)
  ) 
  ;---------------------------------------------------------------------------------------------------------
+ ;Defining a rule lowest salience so that it would be fired in the worst case.
  (defrule end
  (declare (salience -10000))
   =>
